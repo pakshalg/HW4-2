@@ -1,0 +1,74 @@
+<!--
+NAME:  Pakshal Gandhi
+SID:   01772844
+EMAIL: Pakshal_Gandhi@student.uml.edu
+FILE:  index.html
+
+Last modified: 11/29/24
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#slider">Input</a></li>
+        </ul>
+        <div id="slider">
+            <h2>Enter Table Numbers (-50 to 50)</h2>
+            <form id="inputNum">
+                <div class="form-group">
+                    <label for="xMin">Row Min:</label>
+                    <input type="number" id="xMin" name="xMin" required>
+                    <div id="xMinSlider"></div>
+                </div>
+                <div class="form-group">
+                    <label for="xMax">Row Max:</label>
+                    <input type="number" id="xMax" name="xMax" required>
+                    <div id="xMaxSlider"></div>
+                </div>
+                <div class="form-group">
+                    <label for="yMin">Column Min:</label>
+                    <input type="number" id="yMin" name="yMin" required>
+                    <div id="yMinSlider"></div>
+                </div>
+                <div class="form-group">
+                    <label for="yMax">Column Max:</label>
+                    <input type="number" id="yMax" name="yMax" required>
+                    <div id="yMaxSlider"></div>
+                </div>
+                <button type="submit">Generate Table</button>
+                <div class="form-group">
+                    <label for="realtimeUpdate">Update Table in Real-Time:</label>
+                    <input type="checkbox" id="realtimeUpdate">
+                </div>
+            </form>
+
+            <div id="tabManagement">
+                <h3>Tab Management</h3>
+                <button id="deleteAllTabs">Delete All Tabs</button>
+                <button id="selectDeleteTabs">Delete Selected Tabs</button>
+                <div id="tabSelection"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>

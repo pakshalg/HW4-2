@@ -1,0 +1,129 @@
+/*
+NAME:  Pakshal Gandhi
+SID:   01772844
+EMAIL: Pakshal_Gandhi@student.uml.edu
+FILE:  style.css
+
+Last modified: 11/29/24
+*/
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.form-group label {
+  width: 150px;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 5px;
+  max-width: 100px;
+}
+
+.submit-container {
+  display: flex;
+  margin-top: 10px;
+  max-width: 100px;
+}
+
+#inputNum {
+  margin-right: 20px;
+}
+
+.table-container {
+  width: 900px;
+  height: 600px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid White;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+}
+
+th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+tbody th {
+  position: sticky;
+  left: 0;
+  background: #d78521;
+  z-index: 9;
+}
+
+tbody td:first-child {
+  position: sticky;
+  left: 0;
+  background: #d78521;
+  border-right: 1px solid #ccc;
+}
+
+td {
+  background: #ffffff;
+}
+
+.error {
+  display: flex;
+  color: red;
+  font-size: 0.9em;
+}
+
+#xMinSlider,
+#xMaxSlider,
+#yMinSlider,
+#yMaxSlider {
+  display: flex;
+  padding-left: 50px;
+  width: 200px;
+  margin: 10px 0;
+}
+
+#tabs {
+  margin: 20px;
+}
+
+#tabs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  margin: 15px 0 !important;
+  width: 25px !important; /* Adjust width as needed */
+}
+
+
